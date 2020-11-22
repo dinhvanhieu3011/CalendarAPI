@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="webapiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="bangDiemChiTiet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mssv" Type="nvarchar" MaxLength="250" />
+    <Property Name="STT" Type="nvarchar" MaxLength="250" />
+    <Property Name="maHocPhan" Type="nvarchar" MaxLength="250" />
+    <Property Name="tenHocPhan" Type="nvarchar" MaxLength="250" />
+    <Property Name="soTC" Type="nvarchar" MaxLength="250" />
+    <Property Name="lanHoc" Type="nvarchar" MaxLength="250" />
+    <Property Name="lanThi" Type="nvarchar" MaxLength="250" />
+    <Property Name="diemThu" Type="nvarchar" MaxLength="250" />
+    <Property Name="laDiemTongKetMon" Type="nvarchar" MaxLength="250" />
+    <Property Name="danhGia" Type="nvarchar" MaxLength="250" />
+    <Property Name="tp1" Type="nvarchar" MaxLength="250" />
+    <Property Name="tp2" Type="nvarchar" MaxLength="250" />
+    <Property Name="thi" Type="nvarchar" MaxLength="250" />
+    <Property Name="tkhp" Type="varbinary" MaxLength="50" />
+    <Property Name="tkhp2" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="chungChi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mssv" Type="nvarchar" MaxLength="250" />
+    <Property Name="STT" Type="nvarchar" MaxLength="250" />
+    <Property Name="chungChi" Type="nvarchar" MaxLength="250" />
+    <Property Name="diem" Type="nvarchar" MaxLength="250" />
+    <Property Name="xepLoai" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="danhSachKhoanPhaiDong">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="STT" Type="nvarchar" MaxLength="250" />
+    <Property Name="hocKy" Type="nvarchar" MaxLength="250" />
+    <Property Name="soTC" Type="nvarchar" MaxLength="250" />
+    <Property Name="soTien" Type="nvarchar" MaxLength="250" />
+    <Property Name="mienGiam" Type="nvarchar" MaxLength="250" />
+    <Property Name="hocLai" Type="nvarchar" MaxLength="250" />
+    <Property Name="phaiDong" Type="nvarchar" MaxLength="250" />
+    <Property Name="mssv" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="diemTrungBinhHocTap">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mssv" Type="nvarchar" MaxLength="250" />
+    <Property Name="namHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="hocKy" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_1" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_2" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_3" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_4" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_5" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_6" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_7" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_8" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_9" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_10" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_11" Type="nvarchar" MaxLength="250" />
+    <Property Name="value_12" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="lePhihocPhi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mssv" Type="nvarchar" MaxLength="250" />
+    <Property Name="soTaiKhoanNgannHang" Type="nvarchar" MaxLength="250" />
+    <Property Name="phaiDong" Type="nvarchar" MaxLength="250" />
+    <Property Name="daDong" Type="nvarchar" MaxLength="250" />
+    <Property Name="no" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="lichHoc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mssv" Type="nvarchar" MaxLength="250" />
+    <Property Name="monHoc" Type="nvarchar" MaxLength="250" />
+    <Property Name="lopHocPhan" Type="nvarchar" MaxLength="250" />
+    <Property Name="maHocPhan" Type="nvarchar" MaxLength="250" />
+    <Property Name="caHoc" Type="nvarchar" MaxLength="250" />
+    <Property Name="ngayHoc" Type="nvarchar" MaxLength="250" />
+    <Property Name="diaDiem" Type="nvarchar" MaxLength="250" />
+    <Property Name="giaoVien" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="sinhVien">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hoDem" Type="nvarchar" MaxLength="250" />
+    <Property Name="ten" Type="nvarchar" MaxLength="250" />
+    <Property Name="gioiTinh" Type="nvarchar" MaxLength="250" />
+    <Property Name="cmtnd" Type="nvarchar" MaxLength="250" />
+    <Property Name="ngaySinh" Type="nvarchar" MaxLength="250" />
+    <Property Name="noiSinh" Type="nvarchar" MaxLength="250" />
+    <Property Name="queQuan" Type="nvarchar" MaxLength="250" />
+    <Property Name="hocKyNhapHoc" Type="nvarchar" MaxLength="250" />
+    <Property Name="tinh" Type="nvarchar" MaxLength="250" />
+    <Property Name="huyen" Type="nvarchar" MaxLength="250" />
+    <Property Name="xa" Type="nvarchar" MaxLength="250" />
+    <Property Name="danToc" Type="nvarchar" MaxLength="250" />
+    <Property Name="quocTich" Type="nvarchar" MaxLength="250" />
+    <Property Name="sdt" Type="nvarchar" MaxLength="250" />
+    <Property Name="email" Type="nvarchar" MaxLength="250" />
+    <Property Name="mssv" Type="nvarchar" MaxLength="250" />
+    <Property Name="userName" Type="nvarchar" MaxLength="250" />
+    <Property Name="passWord" Type="nvarchar" MaxLength="250" />
+    <Property Name="khoa" Type="nvarchar" MaxLength="250" />
+    <Property Name="nganh" Type="nvarchar" MaxLength="250" />
+    <Property Name="lop" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="thoigiandiadiem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="monhoc" Type="nvarchar" MaxLength="250" />
+    <Property Name="ca" Type="nvarchar" MaxLength="50" />
+    <Property Name="thu" Type="nvarchar" MaxLength="50" />
+    <Property Name="tu" Type="nvarchar" MaxLength="150" />
+    <Property Name="den" Type="nvarchar" MaxLength="150" />
+    <Property Name="diadiem" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="thongBao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mssv" Type="nvarchar" MaxLength="250" />
+    <Property Name="tieuDe" Type="nvarchar" MaxLength="250" />
+    <Property Name="noiDung" Type="nvarchar" MaxLength="500" />
+    <Property Name="create_user" Type="nvarchar" MaxLength="250" />
+    <Property Name="create_date" Type="nvarchar" MaxLength="250" />
+    <Property Name="link" Type="nvarchar" MaxLength="500" />
+    <Property Name="img" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="xuLyHocVu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mssv" Type="nvarchar" MaxLength="250" />
+    <Property Name="stt" Type="nvarchar" MaxLength="250" />
+    <Property Name="hocKy" Type="nvarchar" MaxLength="250" />
+    <Property Name="mucXuLy" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityContainer Name="webapiModelStoreContainer">
+    <EntitySet Name="bangDiemChiTiet" EntityType="Self.bangDiemChiTiet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="chungChi" EntityType="Self.chungChi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="danhSachKhoanPhaiDong" EntityType="Self.danhSachKhoanPhaiDong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="diemTrungBinhHocTap" EntityType="Self.diemTrungBinhHocTap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lePhihocPhi" EntityType="Self.lePhihocPhi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lichHoc" EntityType="Self.lichHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sinhVien" EntityType="Self.sinhVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="thoigiandiadiem" EntityType="Self.thoigiandiadiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="thongBao" EntityType="Self.thongBao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xuLyHocVu" EntityType="Self.xuLyHocVu" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

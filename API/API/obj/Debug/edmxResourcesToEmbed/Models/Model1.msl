@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="webapiModelStoreContainer" CdmEntityContainer="webapiEntities">
+    <EntitySetMapping Name="bangDiemChiTiets">
+      <EntityTypeMapping TypeName="webapiModel.bangDiemChiTiet">
+        <MappingFragment StoreEntitySet="bangDiemChiTiet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="mssv" ColumnName="mssv" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="maHocPhan" ColumnName="maHocPhan" />
+          <ScalarProperty Name="tenHocPhan" ColumnName="tenHocPhan" />
+          <ScalarProperty Name="soTC" ColumnName="soTC" />
+          <ScalarProperty Name="lanHoc" ColumnName="lanHoc" />
+          <ScalarProperty Name="lanThi" ColumnName="lanThi" />
+          <ScalarProperty Name="diemThu" ColumnName="diemThu" />
+          <ScalarProperty Name="laDiemTongKetMon" ColumnName="laDiemTongKetMon" />
+          <ScalarProperty Name="danhGia" ColumnName="danhGia" />
+          <ScalarProperty Name="tp1" ColumnName="tp1" />
+          <ScalarProperty Name="tp2" ColumnName="tp2" />
+          <ScalarProperty Name="thi" ColumnName="thi" />
+          <ScalarProperty Name="tkhp" ColumnName="tkhp" />
+          <ScalarProperty Name="tkhp2" ColumnName="tkhp2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chungChis">
+      <EntityTypeMapping TypeName="webapiModel.chungChi">
+        <MappingFragment StoreEntitySet="chungChi">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="mssv" ColumnName="mssv" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="chungChi1" ColumnName="chungChi" />
+          <ScalarProperty Name="diem" ColumnName="diem" />
+          <ScalarProperty Name="xepLoai" ColumnName="xepLoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="danhSachKhoanPhaiDongs">
+      <EntityTypeMapping TypeName="webapiModel.danhSachKhoanPhaiDong">
+        <MappingFragment StoreEntitySet="danhSachKhoanPhaiDong">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="hocKy" ColumnName="hocKy" />
+          <ScalarProperty Name="soTC" ColumnName="soTC" />
+          <ScalarProperty Name="soTien" ColumnName="soTien" />
+          <ScalarProperty Name="mienGiam" ColumnName="mienGiam" />
+          <ScalarProperty Name="hocLai" ColumnName="hocLai" />
+          <ScalarProperty Name="phaiDong" ColumnName="phaiDong" />
+          <ScalarProperty Name="mssv" ColumnName="mssv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="diemTrungBinhHocTaps">
+      <EntityTypeMapping TypeName="webapiModel.diemTrungBinhHocTap">
+        <MappingFragment StoreEntitySet="diemTrungBinhHocTap">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="mssv" ColumnName="mssv" />
+          <ScalarProperty Name="namHoc" ColumnName="namHoc" />
+          <ScalarProperty Name="hocKy" ColumnName="hocKy" />
+          <ScalarProperty Name="value_1" ColumnName="value_1" />
+          <ScalarProperty Name="value_2" ColumnName="value_2" />
+          <ScalarProperty Name="value_3" ColumnName="value_3" />
+          <ScalarProperty Name="value_4" ColumnName="value_4" />
+          <ScalarProperty Name="value_5" ColumnName="value_5" />
+          <ScalarProperty Name="value_6" ColumnName="value_6" />
+          <ScalarProperty Name="value_7" ColumnName="value_7" />
+          <ScalarProperty Name="value_8" ColumnName="value_8" />
+          <ScalarProperty Name="value_9" ColumnName="value_9" />
+          <ScalarProperty Name="value_10" ColumnName="value_10" />
+          <ScalarProperty Name="value_11" ColumnName="value_11" />
+          <ScalarProperty Name="value_12" ColumnName="value_12" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lePhihocPhis">
+      <EntityTypeMapping TypeName="webapiModel.lePhihocPhi">
+        <MappingFragment StoreEntitySet="lePhihocPhi">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="mssv" ColumnName="mssv" />
+          <ScalarProperty Name="soTaiKhoanNgannHang" ColumnName="soTaiKhoanNgannHang" />
+          <ScalarProperty Name="phaiDong" ColumnName="phaiDong" />
+          <ScalarProperty Name="daDong" ColumnName="daDong" />
+          <ScalarProperty Name="no" ColumnName="no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lichHocs">
+      <EntityTypeMapping TypeName="webapiModel.lichHoc">
+        <MappingFragment StoreEntitySet="lichHoc">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="mssv" ColumnName="mssv" />
+          <ScalarProperty Name="monHoc" ColumnName="monHoc" />
+          <ScalarProperty Name="lopHocPhan" ColumnName="lopHocPhan" />
+          <ScalarProperty Name="maHocPhan" ColumnName="maHocPhan" />
+          <ScalarProperty Name="caHoc" ColumnName="caHoc" />
+          <ScalarProperty Name="ngayHoc" ColumnName="ngayHoc" />
+          <ScalarProperty Name="diaDiem" ColumnName="diaDiem" />
+          <ScalarProperty Name="giaoVien" ColumnName="giaoVien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sinhViens">
+      <EntityTypeMapping TypeName="webapiModel.sinhVien">
+        <MappingFragment StoreEntitySet="sinhVien">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="hoDem" ColumnName="hoDem" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
+          <ScalarProperty Name="cmtnd" ColumnName="cmtnd" />
+          <ScalarProperty Name="ngaySinh" ColumnName="ngaySinh" />
+          <ScalarProperty Name="noiSinh" ColumnName="noiSinh" />
+          <ScalarProperty Name="queQuan" ColumnName="queQuan" />
+          <ScalarProperty Name="hocKyNhapHoc" ColumnName="hocKyNhapHoc" />
+          <ScalarProperty Name="tinh" ColumnName="tinh" />
+          <ScalarProperty Name="huyen" ColumnName="huyen" />
+          <ScalarProperty Name="xa" ColumnName="xa" />
+          <ScalarProperty Name="danToc" ColumnName="danToc" />
+          <ScalarProperty Name="quocTich" ColumnName="quocTich" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mssv" ColumnName="mssv" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="passWord" ColumnName="passWord" />
+          <ScalarProperty Name="khoa" ColumnName="khoa" />
+          <ScalarProperty Name="nganh" ColumnName="nganh" />
+          <ScalarProperty Name="lop" ColumnName="lop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thoigiandiadiems">
+      <EntityTypeMapping TypeName="webapiModel.thoigiandiadiem">
+        <MappingFragment StoreEntitySet="thoigiandiadiem">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="monhoc" ColumnName="monhoc" />
+          <ScalarProperty Name="ca" ColumnName="ca" />
+          <ScalarProperty Name="thu" ColumnName="thu" />
+          <ScalarProperty Name="tu" ColumnName="tu" />
+          <ScalarProperty Name="den" ColumnName="den" />
+          <ScalarProperty Name="diadiem" ColumnName="diadiem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thongBaos">
+      <EntityTypeMapping TypeName="webapiModel.thongBao">
+        <MappingFragment StoreEntitySet="thongBao">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="mssv" ColumnName="mssv" />
+          <ScalarProperty Name="tieuDe" ColumnName="tieuDe" />
+          <ScalarProperty Name="noiDung" ColumnName="noiDung" />
+          <ScalarProperty Name="create_user" ColumnName="create_user" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="img" ColumnName="img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xuLyHocVus">
+      <EntityTypeMapping TypeName="webapiModel.xuLyHocVu">
+        <MappingFragment StoreEntitySet="xuLyHocVu">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="mssv" ColumnName="mssv" />
+          <ScalarProperty Name="stt" ColumnName="stt" />
+          <ScalarProperty Name="hocKy" ColumnName="hocKy" />
+          <ScalarProperty Name="mucXuLy" ColumnName="mucXuLy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
